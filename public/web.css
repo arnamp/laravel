@@ -345,48 +345,38 @@ td{
     margin-left: 20px;
     color: red;
   }
-@media screen and (min-width:240px) and (max-width:767px){
+@media only screen and (min-width:480px) and (max-width:1170px){
     .page{
         flex-direction: column;
-        width: 350%;
-        height: 200vh;
+        width: auto;
+        height: auto;
     }
-    .sidebar{
-        width: 100%;
-    }
-    .content{
-        width: unset;
-    }
-    .word{
-        display: none;
-    }
-    .word2{
-        display: none;
-    }
-    .image{
-        flex-direction: column;
-    }
-    .video{
+    .menu{
+        margin-left: 20%;
         padding-top: 30px;
     }
-    .img-info1{
-        margin-left: 650px;
-        flex-direction: column;
+    .sidebar-img{
+        display: none;
     }
-    .img-info2{
-        margin-left: 650px;
-        flex-direction: column;
+    .other{
+        width: 40%;
+        height: 20%;
+        margin-left: 30%;
     }
-    .img-info3{
-        margin-left: 650px;
-        flex-direction: column;
+    .clock-box{
+        margin-left: 45%;
+    }
+    .video{
+        width: 100%;
+        height: 130%;
+        padding-top: 40px;
+    }
+    .member{
+        margin-right: 25%;
     }
     .img-info4{
-        margin-left: 500px;
+        padding-left: 18%;
         padding-top: 80px;
-    }
-    .sidebar-img{
-        margin-left: 140px;
     }
     .search .icon{
         display: none;
@@ -396,46 +386,39 @@ td{
     }
 }
 
-@media screen and (min-width:768px) and (max-width:1620px){
+@media only screen and (min-width:1170px) and (max-width:1620px){
     .page{
         flex-direction: column;
-        width: 100vh;
-        height: 200vh;
+        width: auto;
+        height: auto;
     }
     .sidebar{
         width: 100%;
     }
-    .sidebar-icon{
-        margin-left:610px;
+    .menu{
+        margin-left: 40%;
     }
-    .cg{
-       margin-left: 730px;
+    .other{
+        width: 40%;
+        height: 20%;
+        margin-left: 30%;
+    }
+    .clock-box{
+        margin-left: 40%;
     }
     .content{
-        width: unset;
+        width: 100%;
     }
-    .word{
-        display: none;
+    .totaltemp{
+        margin-left: 2%;
+        margin-top: 30px;
     }
-    .word2{
-        display: none;
-    }
-    .img-info1{
-        margin-left: 450px;
-        font-size: large;
-    }
-    .img-info2{
-        margin-left: 450px;
-        font-size: large;
-    }
-    .img-info3{
-        margin-left: 450px;
-        font-size: large;
+    .lightvibra{
+        margin-left: 2%;
     }
     .img-info4{
-        margin-left: 500px;
-        padding-top: 70px;
-        font-size: large;
+        padding-top: 100px;
+        padding-left: 2%;
     }
     .sidebar-img{
         margin-left: 710px;
