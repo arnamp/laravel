@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APA-Vibrate</title>
+
+  <link rel="stylesheet" href="web.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <div class="page">
+      <div class="sidebar">
+        <font size ="5"><center><h1>Dashboard</h1></font></center>
+        <div class="sidebar-img">
+          <img src="https://cdn.dribbble.com/users/2014359/screenshots/6008317/2.gif" alt="">
+        </div>
+
+        <div class="menu">
+          <b class="cg">Menu</b>
+          <div class="Item Item-active">
+            <div class="sidebar-icon">
+              <i class="fa-solid fa-table"></i>
+            </div>
+            <font size ="5"><b>Dashboard</b></font>
+          </div>
+          <div class="Item">
+            <div class="sidebar-icon">
+              <i class="fa-solid fa-eject"></i>
+            </div>
+            <a href="About.html"><font size ="5"><b>About Project</b></font></a>
+          </div>
+          <div class="Item">
+            <div class="sidebar-icon">
+              <i class="fa-solid fa-people-group"></i>
+            </div> 
+            <a href="Member.html"><font size ="5"><b>Members</b></font></a>
+          </div>
+          <div class="Item">
+            <div class="sidebar-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div> 
+            <a href="graph.php"><font size ="5"><b>Graphs</b></font></a>
+          </div>
+        </div>
+        <div class="end"></div>
+        <div class="clock-box">
+          <p id="clock"></p>
+        </div>
+        <script>
+          function updateTime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+    
+            // Add leading zeros to minutes and seconds
+            minutes = (minutes < 10 ? "0" : "") + minutes;
+            seconds = (seconds < 10 ? "0" : "") + seconds;
+    
+            // Determine AM/PM notation
+            var ampm = (hours < 12 ? "AM" : "PM");
+            hours = (hours > 12 ? hours - 12 : hours);
+            hours = (hours == 0 ? 12 : hours);
+    
+            // Format the time
+            var timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
+    
+            // Update the clock element
+            document.getElementById("clock").innerHTML = timeString;
+          }
+    
+          // Call the updateTime function every second
+          setInterval(updateTime, 1000);
+        </script>
+        <div class="other">
+            <img src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/original/3bcb6755-c53c-4f31-9ba0-d198e587b019.jpeg" width="100%"><br><br><br>
+            <img src="https://thailandsmartcityexpo.com/wp-content/uploads/2022/11/22611022.png" width="100%"><br><br><br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Kmitl.jpg" width="100%"><br><br><br><br><br>
+            <center><img src="https://thumbs.gfycat.com/JaggedFlusteredLark-max-1mb.gif" width="70%"></center>
+        </div>
+      </div>
+      <div class="content">
+        <div class="nav-bar">
+          <div class="search">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Search">
+            <div class="autocom-box">
+              <!-- here list are inserted from javascript -->
+            </div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+        </div>
+        <script src="js/script.js"></script>
+        <script src="js/suggestions.js"></script>
+        <div class="content-space">
+          <font size ="3"><center><h1>My Project x Zifisense</h1></center></font>
+          <div class="image">
+              <div class ="image-item image-one">
+              </div>
+              <div class="video">
+                <iframe width="100%" height="115%" src="https://www.youtube.com/embed/2d2NnEnHtTQ" title="YouTube video player" frameborder="10px" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              </div>
+          </div>
+          <div class="end2"></div>
+          <div class="content-table">
+            <section>
+              <div class="word_status">
+                <h1>Status</h1>
+              </div>
+              <div class="totaltemp">
+                <div class="main_temp1">
+                  <center><h2>Temp & Humid 1</h2></center>
+                  <div class="imgt1">
+                    <img src="https://i.pinimg.com/originals/0e/f3/bb/0ef3bb66d9216fffcea9022628f7bb26.gif">
+                  </div>
+                  <div class="temp1_info">
+                    <div class="t1info-l">
+                      <div class="wordt1-l">
+                        <div id="infot1"></div>
+                        <script>
+                             fetch('data_temp1_new.json')
+                                 .then(response => response.json())
+                                 .then(data => {
+                                     const datatemp1 = document.getElementById('infot1')
+                                     datatemp1.innerHTML= `<h3>${data[0].Info}</h3>`;
+                                 })
+                        </script>
+                      </div>
+                    </div>
+                    <div class="t1info-r">
+                      <div class="wordt1-r">
+                        <div id="datetimet1"></div>
+                        <script>
+                             fetch('data_temp1_new.json')
+                                 .then(response => response.json())
+                                 .then(data => {
+                                     const datatemp1 = document.getElementById('datetimet1')
+                                     datatemp1.innerHTML= `<h3>DateTime ${data[0].FormatUptime}</h3>`;
+                                 })
+                        </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="main_temp1">
+                  <center><h2>Temp & Humid 2</h2></center>
+                  <div class="imgt1">
+                    <img src="https://i.gifer.com/XHqB.gif" alt="">
+                  </div>
+                  <div class="temp1_info">
+                    <div class="t1info-l">
+                      <div class="wordt1-l">
+                        <div id="infot2"></div>
+                        <script>
+                          fetch('data_temp2_new.json')
+                              .then(response => response.json())
+                              .then(data => {
+                                  const datatemp2 = document.getElementById('infot2')
+                                  datatemp2.innerHTML= `<h3>${data[0].Info}</h3>`;
+                              })
+                        </script>
+                      </div>
+                    </div>
+                    <div class="t1info-r">
+                      <div class="wordt1-r">
+                        <div id="datetimet2"></div>
+                        <script>
+                          fetch('data_temp2_new.json')
+                              .then(response => response.json())
+                              .then(data => {
+                                  const datatemp2 = document.getElementById('datetimet2')
+                                  datatemp2.innerHTML= `<h3>DateTime ${data[0].FormatUptime}</h3>`;
+                              })
+                         </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
+              <div class="lightvibra">
+                <div class="main_temp1">
+                  <center><h2>Light</h2></center>
+                  <div class="imgt1">
+                    <img src="https://animated-gif-creator.com/images/01/tesseract-bulb-animation-by-rika-guite-on-dribbble_69.gif" alt="">
+                  </div>
+                  <div class="temp1_info">
+                    <div class="t1info-l">
+                      <div class="wordt1-l">
+                        <div id="infolight"></div>
+                        <script>
+                          fetch('data_light_new.json')
+                              .then(response => response.json())
+                              .then(data => {
+                                  const datatemp2 = document.getElementById('infolight')
+                                  datatemp2.innerHTML=`<h2>${data[0].Info}</h2>`;
+                              })
+                        </script>
+                      </div>
+                    </div>
+                    <div class="t1info-r">
+                      <div class="wordt1-r">
+                        <div id="datetimelight"></div>
+                        <script>
+                          fetch('data_light_new.json')
+                              .then(response => response.json())
+                              .then(data => {
+                                  const datatemp2 = document.getElementById('datetimelight')
+                                  datatemp2.innerHTML= `<h3>DateTime ${data[0].FormatUptime}</h3>`;
+                              })
+                         </script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="main_temp1">
+                  <center><h2>Vibration</h2></center>
+                  <div class="imgt1">
+                    <img src="https://i.gifer.com/origin/30/307c73143a955f1e0bf26a41b98a035c_w200.gif" alt="">
+                  </div>
+                  <div class="temp1_info">
+                    <div class="t1info-l">
+                      <div class="wordt1-l">
+                        <h3>Temp : 20 Celcius  Humid : 50 RH%</h3>
+                      </div>
+                    </div>
+                    <div class="t1info-r">
+                      <div class="wordt1-r">
+                        <h3>Uptime Monday 2023-03-28 16:54:41</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="wordtable"><center><h1>Notifications Tables</h1></center></div>
+              <div class="tableinfo">
+                <!-- TABLE CONSTRUCTION-->
+                <table id='table'>
+                <!-- HEADING FORMATION -->
+                <tr style="width:40%">
+                  <th>CompanyCode</th>
+                  <th>DeviceType</th>
+                  <th>Data</th>
+                  <th>Info</th>
+                  <th>UpTime</th>
+                </tr>
+              
+                <script>
+                  $(document).ready(function () {
+              
+                  // FETCHING DATA FROM JSON FILE
+                  $.getJSON("data.json" ,
+                    function (data) {
+                    var alldata = '';
+              
+                    // ITERATING THROUGH OBJECTS
+                    $.each(data, function (key, value) {
+              
+                    //CONSTRUCTION OF ROWS HAVING
+                    // DATA FROM JSON OBJECT
+                    alldata += '<tr>';
+                    alldata += '<td>' +
+                      value.CompanyCode + '</td>';
+              
+                    alldata += '<td>' +
+                      value.DeviceType + '</td>';
+              
+                    alldata += '<td>' +
+                      value.Data + '</td>';
+
+                      alldata += '<td>' +
+                      value.Info + '</td>';
+              
+                    alldata += '<td>' +
+                      value.FormatUptime + '</td>';
+              
+                    });
+                    
+                    //INSERTING ROWS INTO TABLE
+                    $('#table').append(alldata);
+                  });
+                  });
+                </script>
+              </div>
+             </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
