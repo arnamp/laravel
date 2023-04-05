@@ -1,0 +1,49 @@
+{
+    "companyCode": "980f70347bc145c8a0adb4a34a76b264",
+    "deviceType": "Temperature And Humidity Sensor(THZ2ZT)",
+    "data": "01011645",
+    "deviceAlias": "temp_humid_1",
+    "parsedData": {
+        "upperThresholdOfTemp": null,
+        "alarmCycle": null,
+        "heartCycle": null,
+        "dataStatus": "normal",
+        "clearAlarmThresholdOfTemp": null,
+        "completeData": "normal,\u6e29\u5ea6\u503c: 27.8\u2103,\u6e7f\u5ea6\u503c: 69RH%",
+        "clearAlarmThresholdOfHum": null,
+        "lowerThresholdOfTemp": null,
+        "versionNumber": "",
+        "alarmType": null,
+        "lowerThresholdOfHum": null,
+        "clearAlarmType": null,
+        "acquisitionCycle": null,
+        "upperThresholdOfHum": null,
+        "temperature": {
+            "unit": "\u2103",
+            "rawValue": "27.8",
+            "name": "\u6e29\u5ea6\u503c",
+            "nameEn": "\u6e29\u5ea6\u503c",
+            "value": "27.8",
+            "nameJp": "\u6e29\u5ea6\u503c"
+        },
+        "header": "01",
+        "humidity": {
+            "unit": "RH%",
+            "rawValue": 69,
+            "name": "\u6e7f\u5ea6\u503c",
+            "nameEn": "\u6e7f\u5ea6\u503c",
+            "value": 69,
+            "nameJp": "\u6e7f\u5ea6\u503c"
+        },
+        "enableStatus": null
+    },
+    "dataDetail": "{\"upperThresholdOfTemp\":null,\"alarmCycle\":null,\"heartCycle\":null,\"dataStatus\":\"normal\",\"clearAlarmThresholdOfTemp\":null,\"completeData\":\"normal,\u6e29\u5ea6\u503c: 27.8\u2103,\u6e7f\u5ea6\u503c: 69RH%\",\"clearAlarmThresholdOfHum\":null,\"lowerThresholdOfTemp\":null,\"versionNumber\":\"\",\"alarmType\":null,\"lowerThresholdOfHum\":null,\"clearAlarmType\":null,\"acquisitionCycle\":null,\"upperThresholdOfHum\":null,\"temperature\":{\"unit\":\"\u2103\",\"rawValue\":\"27.8\",\"name\":\"\u6e29\u5ea6\u503c\",\"nameEn\":\"\u6e29\u5ea6\u503c\",\"value\":\"27.8\",\"nameJp\":\"\u6e29\u5ea6\u503c\"},\"header\":\"01\",\"humidity\":{\"unit\":\"RH%\",\"rawValue\":69,\"name\":\"\u6e7f\u5ea6\u503c\",\"nameEn\":\"\u6e7f\u5ea6\u503c\",\"value\":69,\"nameJp\":\"\u6e7f\u5ea6\u503c\"},\"enableStatus\":null}",
+    "pid": "",
+    "deviceCode": 46,
+    "deviceVersion": 1,
+    "deviceId": "4f030b39",
+    "upTime": 1680687584396,
+    "deviceaddr": null,
+    "accessKey": "",
+    "deviceMold": "ms"
+}
