@@ -345,26 +345,25 @@ td{
     margin-left: 20px;
     color: red;
   }
-@media only screen and (min-width:480px) and (max-width:1170px){
+@media only screen and (min-width:360px) and (max-width:760px){
     .page{
         flex-direction: column;
-        width: auto;
+        width: 200vh;
         height: auto;
     }
-    .menu{
-        margin-left: 20%;
-        padding-top: 30px;
+    .content{
+        width: 100%;
+        height: auto;
     }
     .sidebar-img{
         display: none;
     }
-    .other{
-        width: 40%;
-        height: 20%;
-        margin-left: 30%;
+    .end{
+        width: 180vh;
     }
-    .clock-box{
-        margin-left: 45%;
+    .other{
+        width: 100%;
+        height: 20%;
     }
     .video{
         width: 100%;
@@ -372,10 +371,10 @@ td{
         padding-top: 40px;
     }
     .member{
-        margin-right: 25%;
+        margin-left: 40px;
     }
     .img-info4{
-        padding-left: 18%;
+        padding-left: 30px;
         padding-top: 80px;
     }
     .search .icon{
@@ -386,17 +385,23 @@ td{
     }
 }
 
-@media only screen and (min-width:1170px) and (max-width:1620px){
+@media only screen and (min-width:768px) and (max-width:1280px){
     .page{
         flex-direction: column;
-        width: auto;
+        width: 200vh;
         height: auto;
     }
+    .content{
+        width: 200vh;
+    }
     .sidebar{
-        width: 100%;
+        width: auto;
+    }
+    .sidebar-img{
+        display: none;
     }
     .menu{
-        margin-left: 40%;
+        margin-left: 42%;
     }
     .other{
         width: 40%;
@@ -404,21 +409,33 @@ td{
         margin-left: 30%;
     }
     .clock-box{
-        margin-left: 40%;
+        margin-left: 43%;
+    }
+    .video{
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+    }
+    .image-one{
+        width: 100%;
+        height: 100%;
     }
     .content{
-        width: 100%;
+        width: auto;
+        height: auto;
     }
     .totaltemp{
-        margin-left: 2%;
-        margin-top: 30px;
+        margin-left: 13%;
     }
     .lightvibra{
-        margin-left: 2%;
+        margin-left: 13%;
+    }
+    .tableinfo{
+        margin-left: 10%;
     }
     .img-info4{
         padding-top: 100px;
-        padding-left: 2%;
+        padding-left: 17%;
     }
     .sidebar-img{
         margin-left: 710px;
