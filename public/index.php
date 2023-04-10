@@ -149,13 +149,13 @@ while ($row = mysqli_fetch_array($result5)) {
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
-                      <div class="wordbox"><br><font color="black"><h2>Info</h2></font></div>
+                      <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
                         <h3><?php echo $info1 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
-                      <div class="wordbox"><br><font color="black"><h2>DateTime</h2></font></div>
+                      <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                       <div class="wordt1-r">
                         <h3><?php echo $datetime1?></h3>
                       </div>
@@ -170,13 +170,13 @@ while ($row = mysqli_fetch_array($result5)) {
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
-                      <div class="wordbox"><br><font color="black"><h2>Info</h2></font></div>
+                      <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
                         <h3><?php echo $info2 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
-                      <div class="wordbox"><br><font color="black"><h2>DateTime</h2></font></div>
+                      <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                       <div class="wordt1-r">
                         <h3><?php echo $datetime2?></h3>
                       </div>
@@ -193,13 +193,13 @@ while ($row = mysqli_fetch_array($result5)) {
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
-                      <div class="wordbox"><br><font color="black"><h2>Info</h2></font></div>
+                      <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
                         <h3><?php echo $info3 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
-                      <div class="wordbox"><br><font color="black"><h2>DateTime</h2></font></div>
+                      <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                       <div class="wordt1-r">
                         <h3><?php echo $datetime3?></h3>
                       </div>
@@ -214,13 +214,13 @@ while ($row = mysqli_fetch_array($result5)) {
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
-                      <div class="wordbox"><br><font color="black"><h2>Info</h2></font></div>
+                      <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
                         <h3><?php echo $info4 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
-                      <div class="wordbox"><br><font color="black"><h2>DateTime</h2></font></div>
+                      <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                       <div class="wordt1-r">
                         <h3><?php echo $datetime4?></h3>
                       </div>
