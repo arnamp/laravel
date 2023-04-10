@@ -149,14 +149,14 @@ while ($row = mysqli_fetch_array($result5)) {
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
-                      <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
+                        <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                         <h3><?php echo $info1 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
-                      <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                       <div class="wordt1-r">
+                        <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                         <h3><?php echo $datetime1?></h3>
                       </div>
                     </div>
@@ -170,14 +170,14 @@ while ($row = mysqli_fetch_array($result5)) {
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
-                      <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
+                        <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                         <h3><?php echo $info2 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
-                      <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                       <div class="wordt1-r">
+                        <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                         <h3><?php echo $datetime2?></h3>
                       </div>
                     </div>
@@ -189,18 +189,18 @@ while ($row = mysqli_fetch_array($result5)) {
                 <div class="main_temp1">
                   <center><h2>Light</h2></center>
                   <div class="imgt1">
-                    <img src="https://thumbs.gfycat.com/OblongFluffyBullmastiff-size_restricted.gif" alt="">
+                    <img src="https://bestanimations.com/media/bulbs/2014598748tumblr_nq3a0iw1wH1takhpwo1_500.gif" alt="">
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
-                      <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
+                        <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                         <h3><?php echo $info3 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
-                      <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                       <div class="wordt1-r">
+                        <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                         <h3><?php echo $datetime3?></h3>
                       </div>
                     </div>
@@ -210,18 +210,18 @@ while ($row = mysqli_fetch_array($result5)) {
                 <div class="main_temp1">
                   <center><h2>Vibration</h2></center>
                   <div class="imgt1">
-                    <img src="https://media.tenor.com/0D4WlRzdeW0AAAAC/vibration-vibrate.gif" alt="">
+                    <img src="https://cutewallpaper.org/26/artifical-intelligence-gif-wallpaper/natural-ai-brain-brand-element-motion-design-animation-animation-design-motion-design.gif" alt="">
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
-                      <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
-                        <p><?php echo $info4 ?></p>
+                        <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
+                        <h3><?php echo $info4 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
-                      <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                       <div class="wordt1-r">
+                        <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                         <h3><?php echo $datetime4?></h3>
                       </div>
                     </div>
