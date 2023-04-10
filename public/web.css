@@ -304,21 +304,21 @@ td{
     display: flex;
     color:rgb(255, 255, 255)
 }
-.wordt1-l{
-    margin-top: 60px;
-}
-.wordt1-r{
-    margin-top: 60px;
-}
 .t1info-l{
     background: #ed7458;
     height: 230px;
     width: 180px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .t1info-r{
     background: #57648c;
     height: 230px;
     width: 180px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 .totaltemp{
     display:flex;
