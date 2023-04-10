@@ -189,7 +189,7 @@ while ($row = mysqli_fetch_array($result5)) {
                 <div class="main_temp1">
                   <center><h2>Light</h2></center>
                   <div class="imgt1">
-                    <img src="https://bestanimations.com/media/bulbs/2014598748tumblr_nq3a0iw1wH1takhpwo1_500.gif" alt="">
+                    <img src="https://thumbs.gfycat.com/OblongFluffyBullmastiff-size_restricted.gif" alt="">
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
