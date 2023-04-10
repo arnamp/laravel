@@ -210,13 +210,13 @@ while ($row = mysqli_fetch_array($result5)) {
                 <div class="main_temp1">
                   <center><h2>Vibration</h2></center>
                   <div class="imgt1">
-                    <img src="https://i.gifer.com/origin/30/307c73143a955f1e0bf26a41b98a035c_w200.gif" alt="">
+                    <img src="https://media.tenor.com/0D4WlRzdeW0AAAAC/vibration-vibrate.gif" alt="">
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
                       <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
-                        <h3><?php echo $info4 ?></h3>
+                        <p><?php echo $info4 ?></p>
                       </div>
                     </div>
                     <div class="t1info-r">
