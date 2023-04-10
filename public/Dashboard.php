@@ -1,13 +1,15 @@
 <?php
 $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2wNItQFhTtqCvO","preproject");
-$sql1 ="select CompanyCode,DeviceType,Data,Info,Uptime from temphumid union all select CompanyCode,DeviceType,Data,Info,Uptime from light order by Uptime desc limit 20";
+$sql1 ="select CompanyCode,DeviceType,Data,Info,Uptime from temphumid union all select CompanyCode,DeviceType,Data,Info,Uptime from light union all select CompanyCode,DeviceType,Data,Info,Uptime from vibration order by Uptime desc limit 20";
 $sql2 = "select DeviceType,Info,Uptime from temphumid where DeviceType = 'temp_humid_1' order by Uptime desc limit 1";
 $sql3 = "select DeviceType,Info,Uptime from temphumid where DeviceType = 'temp_humid_2' order by Uptime desc limit 1";
 $sql4 = "select DeviceType,Info,Uptime from light order by Uptime desc limit 1";
+$sql5 = "select DeviceType,Info,Uptime from vibration order by Uptime desc limit 1";
 $result1 = mysqli_query($con,$sql1);
 $result2 = mysqli_query($con,$sql2);
 $result3 = mysqli_query($con,$sql3);
 $result4 = mysqli_query($con,$sql4);
+$result5 = mysqli_query($con,$sql5);
 while ($row = mysqli_fetch_array($result2)) { 
     $datetime1  = date_format(date_create( $row['Uptime']),"l d-m-Y H:i:s") ;
     $info1 = $row['Info'];
@@ -19,6 +21,10 @@ while ($row = mysqli_fetch_array($result3)) {
 while ($row = mysqli_fetch_array($result4)) { 
     $datetime3  = date_format(date_create( $row['Uptime']),"l d-m-Y H:i:s") ;
     $info3 = $row['Info'];
+}
+while ($row = mysqli_fetch_array($result5)) { 
+  $datetime4  = date_format(date_create( $row['Uptime']),"l d-m-Y H:i:s") ;
+  $info4 = $row['Info'];
 }
 ?>
 
@@ -183,7 +189,7 @@ while ($row = mysqli_fetch_array($result4)) {
                 <div class="main_temp1">
                   <center><h2>Light</h2></center>
                   <div class="imgt1">
-                    <img src="https://animated-gif-creator.com/images/01/tesseract-bulb-animation-by-rika-guite-on-dribbble_69.gif" alt="">
+                    <img src="https://thumbs.gfycat.com/OblongFluffyBullmastiff-size_restricted.gif" alt="">
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
@@ -208,13 +214,15 @@ while ($row = mysqli_fetch_array($result4)) {
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
+                      <div class="wordbox"><br><font color="black"><h2>Info</h2></font></div>
                       <div class="wordt1-l">
-                        <h3>Temp : 20 Celcius  Humid : 50 RH%</h3>
+                        <h3><?php echo $info4 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
+                      <div class="wordbox"><br><font color="black"><h2>DateTime</h2></font></div>
                       <div class="wordt1-r">
-                        <h3>Uptime Monday 2023-03-28 16:54:41</h3>
+                        <h3><?php echo $datetime4?></h3>
                       </div>
                     </div>
                   </div>
