@@ -141,12 +141,12 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                     backgroundColor:[
                                     'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                     data:<?php echo json_encode($info1); ?>,
-                                    pointStyle: 'circle',
                                 }]  
                               },
                             options: {
                               legend: {
-                                display: false,
+                                display: true,
+                                position: 'top',
     
                                 labels: {
                                 fontColor: '#FFFFFF',
@@ -174,12 +174,12 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                       data:<?php echo json_encode($info2); ?>,
-                                      pointStyle: 'circle',
                                   }]  
                                 },
                               options: {
                                 legend: {
-                                  display: false,
+                                  display: true,
+                                  position: 'top',
       
                                   labels: {
                                   fontColor: '#FFFFFF',
@@ -207,12 +207,12 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                       data:<?php echo json_encode($info3); ?>,
-                                      pointStyle: 'circle',
                                   }]  
                                 },
                               options: {
                                 legend: {
-                                  display: false,
+                                  display: true,
+                                  position: 'top',
       
                                   labels: {
                                   fontColor: '#FFFFFF',
