@@ -132,7 +132,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
             <canvas  id="chart1"></canvas> 
           </div> 
             <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-            <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
                 <script type="text/javascript">
                     var ctx1 = document.getElementById("chart1").getContext('2d');
                         var Chart1 = new Chart(ctx1, {
