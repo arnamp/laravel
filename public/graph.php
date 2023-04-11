@@ -151,6 +151,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 fontColor: '#FFFFFF',
                                 fontFamily: 'Circular Std Book',
                                 fontSize: 14,
+                                pointStyle: 'circle',
                                 }
                               },
                             }
@@ -183,6 +184,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   fontColor: '#FFFFFF',
                                   fontFamily: 'Circular Std Book',
                                   fontSize: 14,
+                                  pointStyle: 'circle',
                                   }
                                 },
                               }
@@ -215,6 +217,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   fontColor: '#FFFFFF',
                                   fontFamily: 'Circular Std Book',
                                   fontSize: 14,
+                                  pointStyle: 'circle',
                                   }
                                 },
                               }
@@ -266,6 +269,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   fontColor: '#FFFFFF',
                                   fontFamily: 'Circular Std Book',
                                   fontSize: 14,
+                                  pointStyle: 'circle',
                                   }
                                 },
                               }
