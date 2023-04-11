@@ -147,7 +147,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 {
                                   label:'Humid 1 (RH%)',
                                     backgroundColor:[
-                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:2,
                                     data:<?php echo json_encode($humid1); ?>,
                                 }
                               ]  
@@ -187,7 +187,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   {
                                     label:'Humid 2 (RH%)',
                                     backgroundColor:[
-                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:2,
                                     data:<?php echo json_encode($humid2); ?>,
                                   }
                                 ]  
@@ -260,19 +260,19 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                     {
                                       label:'Acceleration (m/s^2)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:2,
                                       data:<?php echo json_encode($acceleration); ?>,
                                     },
                                     {
                                       label:'Rotation Speed (r/min)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#CC66FF"],borderWidth:2,
                                       data:<?php echo json_encode($rotation); ?>,
                                     },
                                     {
                                       label:'Temperature (Celcius)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#CCFF66"],borderWidth:2,
                                       data:<?php echo json_encode($temp); ?>,
                                     }
                                   ]  
