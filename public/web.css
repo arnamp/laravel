@@ -330,16 +330,6 @@ td{
     align-items: center;
     text-align: center;
 }
-.wordvi-r{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.wordvi-l{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
 .totaltemp{
     display:flex;
 }
