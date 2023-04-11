@@ -141,6 +141,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                     backgroundColor:[
                                     'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                     data:<?php echo json_encode($info1); ?>,
+                                    pointStyle: 'circle',
                                 }]  
                               },
                             options: {
@@ -154,7 +155,21 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 fontSize: 14,
                                 }
                               },
-                            }
+                            },
+                            elements: {
+                                point: {
+                                    radius: 5,
+                                    borderWidth: 1,
+                                    borderColor: 'rgba(75, 192, 192, 1)',
+                                    backgroundColor: 'rgba(75, 192, 192, 0.2)'
+                                }
+                            },
+                            plugins: {
+                                datalabels: {
+                                    display: true,
+                                    align: 'top',
+                                  }
+                              }
                           });
                   </script> 
             <div style="width:70%;hieght:10%;text-align:center">
