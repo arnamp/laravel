@@ -139,9 +139,26 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 datasets: [{
                                     label:'Temp & Humid 1',
                                     backgroundColor:[
-                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                     data:<?php echo json_encode($info1); ?>,
-                                }]  
+                                    axisX:{
+                                        crosshair: {
+                                          enabled: true,
+                                          snapToDataPoint: true
+                                        }
+                                    },
+                                    axisY:{
+                                      title: "in Metric Tons",
+                                      includeZero: true,
+                                      crosshair: {
+                                        enabled: true,
+                                        snapToDataPoint: true
+                                      }
+                                    },
+                                    toolTip:{
+                                        enabled: false
+                                    },
+                                  }]  
                               },
                             options: {
                                 legend: {
