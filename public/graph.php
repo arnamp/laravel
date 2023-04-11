@@ -157,6 +157,8 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 legend: {
                                 display: true,
                                 position: 'top',
+                                pointSize: 7,
+                                dataOpacity: 0.3,
     
                                 labels: {
                                 fontColor: '#FFFFFF',
@@ -197,6 +199,8 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 legend: {
                                   display: true,
                                   position: 'top',
+                                  pointSize: 7,
+                                  dataOpacity: 0.3,
       
                                   labels: {
                                   fontColor: '#FFFFFF',
@@ -230,6 +234,8 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 legend: {
                                   display: true,
                                   position: 'top',
+                                  pointSize: 7,
+                                  dataOpacity: 0.3,
       
                                   labels: {
                                   fontColor: '#FFFFFF',
@@ -282,6 +288,8 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 legend: {
                                   display: true,
                                   position: 'top',
+                                  pointSize: 7,
+                                  dataOpacity: 0.3,
       
                                   labels: {
                                   fontColor: '#FFFFFF',
