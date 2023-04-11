@@ -142,8 +142,9 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 datasets: [{
                                     label:'Temp 1 (Celcius)',
                                     backgroundColor:[
-                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,hoverBackgroundColor:'#cccccc',hoverBorderColor:'#666666',
                                     data:<?php echo json_encode($temp1); ?>, 
+                                    
                                 },
                                 {
                                   label:'Humid 1 (RH%)',
