@@ -143,7 +143,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                     label:'Temp 1 (Celcius)',
                                     backgroundColor:[
                                     'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:3,tension:0.4,
-                                    pointShape: { type: 'star', sides: 5 },
+                                    pointOpacity:0.4,
                                     pointBorderColor: ["#FFFFFF"], 
                                     data:<?php echo json_encode($temp1); ?>, 
                                     
@@ -152,7 +152,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   label:'Humid 1 (RH%)',
                                     backgroundColor:[
                                     'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:3,tension:0.4,
-                                    pointShape: { type: 'star', sides: 5 },
+                                    pointOpacity:0.4,
                                     pointBorderColor: ["#FFFFFF"],
                                     data:<?php echo json_encode($humid1); ?>,
                                 }
@@ -188,7 +188,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       label:'Temp 2 (Celcius)',
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:3,tension:0.4,
-                                      pointShape: { type: 'star', sides: 5 },
+                                      pointOpacity:0.4,
                                       pointBorderColor: ["#FFFFFF"],
                                       data:<?php echo json_encode($temp2); ?>,
                                   },
@@ -196,7 +196,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                     label:'Humid 2 (RH%)',
                                     backgroundColor:[
                                     'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:3,tension:0.4,
-                                    pointShape: { type: 'star', sides: 5 },
+                                    pointOpacity:0.4,
                                     pointBorderColor: ["#FFFFFF"],
                                     data:<?php echo json_encode($humid2); ?>,
                                   }
@@ -232,7 +232,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       label:'Light (lux)',
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:3,tension:0.4,
-                                      pointShape: { type: 'star', sides: 5 },
+                                      pointOpacity:0.4,
                                       pointBorderColor: ["#FFFFFF"],
                                       data:<?php echo json_encode($info3); ?>,
                                   }]  
@@ -267,7 +267,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       label:'Speed (mm/s)',
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:3,tension:0.4,
-                                      pointShape: { type: 'star', sides: 5 },
+                                      pointOpacity:0.4,
                                       pointBorderColor: ["#FFFFFF"],
                                       data:<?php echo json_encode($speed); ?>,
                                     },
@@ -275,7 +275,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       label:'Acceleration (m/s^2)',
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:3,tension:0.4,
-                                      pointShape: { type: 'star', sides: 5 },
+                                      pointOpacity:0.4,
                                       pointBorderColor: ["#FFFFFF"],
                                       data:<?php echo json_encode($acceleration); ?>,
                                     },
@@ -283,7 +283,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       label:'Rotation Speed (r/min)',
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["#CC66FF"],borderWidth:3,tension:0.4,
-                                      pointShape: { type: 'star', sides: 5 },
+                                      pointOpacity:0.4,
                                       pointBorderColor: ["#FFFFFF"],
                                       data:<?php echo json_encode($rotation); ?>,
                                     },
@@ -291,7 +291,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       label:'Temperature (Celcius)',
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["#FFFF66"],borderWidth:3,tension:0.4,
-                                      pointShape: { type: 'star', sides: 5 },
+                                      pointOpacity:0.4,
                                       pointBorderColor: ["#FFFFFF"],
                                       data:<?php echo json_encode($temp); ?>,
                                     }
