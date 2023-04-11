@@ -214,13 +214,13 @@ while ($row = mysqli_fetch_array($result5)) {
                   </div>
                   <div class="temp1_info">
                     <div class="t1info-l">
-                      <div class="wordt1-l">
+                      <div class="wordvi-l">
                         <div class="wordbox"><font color="black"><h2>Info</h2></font></div>
                         <h3><?php echo $info4 ?></h3>
                       </div>
                     </div>
                     <div class="t1info-r">
-                      <div class="wordt1-r">
+                      <div class="wordvi-r">
                         <div class="wordbox"><font color="black"><h2>DateTime</h2></font></div>
                         <h3><?php echo $datetime4?></h3>
                       </div>
