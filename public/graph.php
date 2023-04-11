@@ -272,7 +272,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                     {
                                       label:'Temperature (Celcius)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["#CCFF66"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#FFFF66"],borderWidth:2,
                                       data:<?php echo json_encode($temp); ?>,
                                     }
                                   ]  
