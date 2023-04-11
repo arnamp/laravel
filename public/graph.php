@@ -230,7 +230,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
               <script src="//code.jquery.com/jquery-1.9.1.js"></script>
               <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
                   <script type="text/javascript">
-                      var ctx3 = document.getElementById("chart4").getContext('2d');
+                      var ctx4 = document.getElementById("chart4").getContext('2d');
                           var Chart4 = new Chart(ctx4, {
                               type: 'line',
                               data: {
