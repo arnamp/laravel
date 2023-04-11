@@ -144,13 +144,6 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 }]  
                               },
                             options: {
-                              scales: {
-                                yAxes: [{
-                                  ticks: {
-                                    beginAtZero:true
-                                  }
-                                }]
-                              }
                               legend: {
                                 display: true,
                                 position: 'top',
@@ -230,14 +223,14 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                               }
                             });
                     </script>
-            <div style="width:70%;hieght:20%;text-align:center">
+            <div style="width:70%;hieght:10%;text-align:center">
               <div class="word_device"><br><br><h3><?php echo $productname4;?></h3></div>
               <canvas  id="chart4"></canvas>
             </div> 
               <script src="//code.jquery.com/jquery-1.9.1.js"></script>
               <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
                   <script type="text/javascript">
-                      var ctx4 = document.getElementById("chart4").getContext('2d');
+                      var ctx3 = document.getElementById("chart4").getContext('2d');
                           var Chart4 = new Chart(ctx4, {
                               type: 'line',
                               data: {
@@ -247,30 +240,34 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                       data:<?php echo json_encode($speed); ?>,
-                                    },
-                                    {
+                                  }]  
+                                },
+                              options: {
+                                legend: {
+                                  display: true,
+                                  position: 'top',
+      
+                                  labels: {
+                                  fontColor: '#FFFFFF',
+                                  fontFamily: 'Circular Std Book',
+                                  fontSize: 14,
+                                  }
+                                },
+                              },
+                              type: 'line',
+                              data: {
+                                  labels:<?php echo json_encode($datetime4); ?>,
+                                  datasets: [{
                                       label:'Acceleration',
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                       data:<?php echo json_encode($acceleration); ?>,
-                                    },
-                                    {
-                                      label:'Rotation speed',
-                                      backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
-                                      data:<?php echo json_encode($rotation); ?>,
-                                    },
-                                    {
-                                      label:'Temperature',
-                                      backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
-                                      data:<?php echo json_encode($temp); ?>,
-                                    }
-                                  ]  
+                                  }]  
                                 },
                               options: {
                                 legend: {
-                                  display: false,
+                                  display: true,
+                                  position: 'top',
       
                                   labels: {
                                   fontColor: '#FFFFFF',
@@ -280,7 +277,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 },
                               }
                             });
-                    </script> 
+                    </script>
         </div>
       </div>
 </body>
