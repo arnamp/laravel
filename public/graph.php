@@ -141,6 +141,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                     backgroundColor:[
                                     'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                     data:<?php echo json_encode($info1); ?>,
+                                    pointStyle: 'circle',
                                 }]  
                               },
                             options: {
@@ -151,17 +152,8 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 fontColor: '#FFFFFF',
                                 fontFamily: 'Circular Std Book',
                                 fontSize: 14,
-                                pointStyle: 'circle',
                                 }
                               },
-                            },
-                            elements: {
-                              point: {
-                                  radius: 5, // Set the radius of the data points
-                                  borderWidth: 1, // Set the border width of the data points
-                                  borderColor: 'rgba(75, 192, 192, 1)', // Set the border color of the data points
-                                  backgroundColor: 'rgba(75, 192, 192, 0.2)' // Set the background color of the data points
-                                }
                             }
                           });
                   </script> 
@@ -182,6 +174,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                       data:<?php echo json_encode($info2); ?>,
+                                      pointStyle: 'circle',
                                   }]  
                                 },
                               options: {
@@ -192,17 +185,8 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   fontColor: '#FFFFFF',
                                   fontFamily: 'Circular Std Book',
                                   fontSize: 14,
-                                  pointStyle: 'circle',
                                   }
                                 },
-                              },
-                              elements: {
-                                point: {
-                                    radius: 5, // Set the radius of the data points
-                                    borderWidth: 1, // Set the border width of the data points
-                                    borderColor: 'rgba(75, 192, 192, 1)', // Set the border color of the data points
-                                    backgroundColor: 'rgba(75, 192, 192, 0.2)' // Set the background color of the data points
-                                  }
                               }
                             });
                     </script>  
@@ -223,6 +207,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                       data:<?php echo json_encode($info3); ?>,
+                                      pointStyle: 'circle',
                                   }]  
                                 },
                               options: {
@@ -233,17 +218,8 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   fontColor: '#FFFFFF',
                                   fontFamily: 'Circular Std Book',
                                   fontSize: 14,
-                                  pointStyle: 'circle',
                                   }
                                 },
-                              },
-                              elements: {
-                                point: {
-                                    radius: 5, // Set the radius of the data points
-                                    borderWidth: 1, // Set the border width of the data points
-                                    borderColor: 'rgba(75, 192, 192, 1)', // Set the border color of the data points
-                                    backgroundColor: 'rgba(75, 192, 192, 0.2)' // Set the background color of the data points
-                                  }
                               }
                             });
                     </script>
@@ -295,14 +271,6 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   fontSize: 14,
                                   }
                                 },
-                              },
-                              elements: {
-                                point: {
-                                    radius: 5, // Set the radius of the data points
-                                    borderWidth: 1, // Set the border width of the data points
-                                    borderColor: 'rgba(75, 192, 192, 1)', // Set the border color of the data points
-                                    backgroundColor: 'rgba(75, 192, 192, 0.2)' // Set the background color of the data points
-                                  }
                               }
                             });
                     </script> 
