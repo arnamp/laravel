@@ -49,7 +49,8 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
   <title>APA-Vibrate</title>
 
   <link rel="stylesheet" href="web.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
 </head>
 
 <body>
