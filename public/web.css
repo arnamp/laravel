@@ -308,11 +308,17 @@ td{
     background: #ed7458;
     height: 230px;
     width: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .t1info-r{
     background: #57648c;
     height: 230px;
     width: 180px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .totaltemp{
     display:flex;
