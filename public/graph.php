@@ -221,8 +221,8 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                             });
                     </script>
             <div style="width:70%;hieght:10%;text-align:center">
-              <div class="word_device"><br><br><h3><?php echo $productname3;?></h3></div>
-              <canvas  id="chart3"></canvas>
+              <div class="word_device"><br><br><h3><?php echo $productname4;?></h3></div>
+              <canvas  id="chart4"></canvas>
             </div> 
               <script src="//code.jquery.com/jquery-1.9.1.js"></script>
               <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
