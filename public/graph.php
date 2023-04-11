@@ -129,6 +129,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
             <canvas  id="chart1"></canvas> 
           </div> 
             <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
             <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
                 <script type="text/javascript">
                     var ctx1 = document.getElementById("chart1").getContext('2d');
@@ -141,24 +142,9 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                     backgroundColor:[
                                     'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
                                     data:<?php echo json_encode($info1); ?>,
-                                    axisX:{
-                                        crosshair: {
-                                          enabled: true,
-                                          snapToDataPoint: true
-                                        }
-                                    },
-                                    axisY:{
-                                      title: "in Metric Tons",
-                                      includeZero: true,
-                                      crosshair: {
-                                        enabled: true,
-                                        snapToDataPoint: true
-                                      }
-                                    },
-                                    toolTip:{
-                                        enabled: false
-                                    },
-                                  }]  
+                                    pointRadius: 5, 
+                                    pointHoverRadius: 7, 
+                                }]  
                               },
                             options: {
                                 legend: {
