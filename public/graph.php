@@ -140,16 +140,10 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                     label:'Temp & Humid 1',
                                     backgroundColor:[
                                     'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
-                                    data:<?php echo json_encode($info1); ?>,
+                                    data:<?php echo json_encode($info1); ?>
                                 }]  
                               },
                             options: {
-                              tooltips: {
-                                  mode: 'label',
-                              },
-                              hover: {
-                                  mode: 'label'
-                              },
                               legend: {
                                 display: true,
                                 position: 'top',
