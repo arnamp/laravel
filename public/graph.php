@@ -154,6 +154,14 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 pointStyle: 'circle',
                                 }
                               },
+                            },
+                            elements: {
+                              point: {
+                                  radius: 5, // Set the radius of the data points
+                                  borderWidth: 1, // Set the border width of the data points
+                                  borderColor: 'rgba(75, 192, 192, 1)', // Set the border color of the data points
+                                  backgroundColor: 'rgba(75, 192, 192, 0.2)' // Set the background color of the data points
+                                }
                             }
                           });
                   </script> 
@@ -187,6 +195,14 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   pointStyle: 'circle',
                                   }
                                 },
+                              },
+                              elements: {
+                                point: {
+                                    radius: 5, // Set the radius of the data points
+                                    borderWidth: 1, // Set the border width of the data points
+                                    borderColor: 'rgba(75, 192, 192, 1)', // Set the border color of the data points
+                                    backgroundColor: 'rgba(75, 192, 192, 0.2)' // Set the background color of the data points
+                                  }
                               }
                             });
                     </script>  
@@ -220,10 +236,18 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   pointStyle: 'circle',
                                   }
                                 },
+                              },
+                              elements: {
+                                point: {
+                                    radius: 5, // Set the radius of the data points
+                                    borderWidth: 1, // Set the border width of the data points
+                                    borderColor: 'rgba(75, 192, 192, 1)', // Set the border color of the data points
+                                    backgroundColor: 'rgba(75, 192, 192, 0.2)' // Set the background color of the data points
+                                  }
                               }
                             });
                     </script>
-            <div style="width:70%;hieght:10%;text-align:center">
+            <div style="width:70%;hieght:20%;text-align:center">
               <div class="word_device"><br><br><h3><?php echo $productname4;?></h3></div>
               <canvas  id="chart4"></canvas>
             </div> 
@@ -269,9 +293,16 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   fontColor: '#FFFFFF',
                                   fontFamily: 'Circular Std Book',
                                   fontSize: 14,
-                                  pointStyle: 'circle',
                                   }
                                 },
+                              },
+                              elements: {
+                                point: {
+                                    radius: 5, // Set the radius of the data points
+                                    borderWidth: 1, // Set the border width of the data points
+                                    borderColor: 'rgba(75, 192, 192, 1)', // Set the border color of the data points
+                                    backgroundColor: 'rgba(75, 192, 192, 0.2)' // Set the background color of the data points
+                                  }
                               }
                             });
                     </script> 
