@@ -142,14 +142,14 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 datasets: [{
                                     label:'Temp 1 (Celcius)',
                                     backgroundColor:[
-                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:3,pointSize:7,
                                     data:<?php echo json_encode($temp1); ?>, 
                                     
                                 },
                                 {
                                   label:'Humid 1 (RH%)',
                                     backgroundColor:[
-                                    'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:2,
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:3,pointSize:7,
                                     data:<?php echo json_encode($humid1); ?>,
                                 }
                               ]  
@@ -158,8 +158,6 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 legend: {
                                 display: true,
                                 position: 'top',
-                                pointSize: 7,
-                                dataOpacity: 0.3,
     
                                 labels: {
                                 fontColor: '#FFFFFF',
@@ -175,7 +173,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
               <canvas  id="chart2"></canvas>
             </div>
               <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-              <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
                   <script type="text/javascript">
                       var ctx2 = document.getElementById("chart2").getContext('2d');
                           var Chart2 = new Chart(ctx2, {
@@ -185,13 +183,13 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   datasets: [{
                                       label:'Temp 2 (Celcius)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:3,pointSize:7,
                                       data:<?php echo json_encode($temp2); ?>,
                                   },
                                   {
                                     label:'Humid 2 (RH%)',
                                     backgroundColor:[
-                                    'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:2,
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:3,pointSize:7,
                                     data:<?php echo json_encode($humid2); ?>,
                                   }
                                 ]  
@@ -200,8 +198,6 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 legend: {
                                   display: true,
                                   position: 'top',
-                                  pointSize: 7,
-                                  dataOpacity: 0.3,
       
                                   labels: {
                                   fontColor: '#FFFFFF',
@@ -217,7 +213,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
               <canvas  id="chart3"></canvas>
             </div> 
               <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-              <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
                   <script type="text/javascript">
                       var ctx3 = document.getElementById("chart3").getContext('2d');
                           var Chart3 = new Chart(ctx3, {
@@ -227,7 +223,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   datasets: [{
                                       label:'Light (lux)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:3,pointSize:7,
                                       data:<?php echo json_encode($info3); ?>,
                                   }]  
                                 },
@@ -235,8 +231,6 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 legend: {
                                   display: true,
                                   position: 'top',
-                                  pointSize: 7,
-                                  dataOpacity: 0.3,
       
                                   labels: {
                                   fontColor: '#FFFFFF',
@@ -252,7 +246,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
               <canvas  id="chart4"></canvas>
             </div> 
               <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-              <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
                   <script type="text/javascript">
                       var ctx4 = document.getElementById("chart4").getContext('2d');
                           var Chart4 = new Chart(ctx4, {
@@ -262,25 +256,25 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   datasets: [{
                                       label:'Speed (mm/s)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:3,pointSize:7,
                                       data:<?php echo json_encode($speed); ?>,
                                     },
                                     {
                                       label:'Acceleration (m/s^2)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:3,pointSize:7,
                                       data:<?php echo json_encode($acceleration); ?>,
                                     },
                                     {
                                       label:'Rotation Speed (r/min)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["#CC66FF"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#CC66FF"],borderWidth:3,pointSize:7,
                                       data:<?php echo json_encode($rotation); ?>,
                                     },
                                     {
                                       label:'Temperature (Celcius)',
                                       backgroundColor:[
-                                      'RGB(0, 0, 255,0.1)'],borderColor:["#FFFF66"],borderWidth:2,
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#FFFF66"],borderWidth:3,pointSize:7,
                                       data:<?php echo json_encode($temp); ?>,
                                     }
                                   ]  
@@ -289,8 +283,6 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 legend: {
                                   display: true,
                                   position: 'top',
-                                  pointSize: 7,
-                                  dataOpacity: 0.3,
       
                                   labels: {
                                   fontColor: '#FFFFFF',
