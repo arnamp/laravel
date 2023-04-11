@@ -34,7 +34,7 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
       $acceleration[] = $row['Acceleration'];
       $rotation[] = $row['Rotation'];
       $temp[] = $row['Temp'];
- }
+    }
 }
 ?>
 
