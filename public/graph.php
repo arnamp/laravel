@@ -260,13 +260,12 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 },
                               options: {
                                 legend: {
-                                  display: ,
+                                  display: false,
       
                                   labels: {
                                   fontColor: '#FFFFFF',
                                   fontFamily: 'Circular Std Book',
                                   fontSize: 14,
-                                  pointStyle: 'circle'
                                   }
                                 },
                               }
