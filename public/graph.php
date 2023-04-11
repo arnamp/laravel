@@ -169,7 +169,137 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                             }
                           });
                   </script> 
-            
+            <div style="width:70%;hieght:10%;text-align:center">
+              <div class="word_device"><br><br><h3><?php echo $productname2;?></h3></div>
+              <canvas  id="chart2"></canvas>
+            </div>
+              <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+              <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+                  <script type="text/javascript">
+                      var ctx2 = document.getElementById("chart2").getContext('2d');
+                          var Chart2 = new Chart(ctx2, {
+                              type: 'line',
+                              data: {
+                                  labels:<?php echo json_encode($datetime2); ?>,
+                                  datasets: [{
+                                      label:'Temp 2 (Celcius)',
+                                      backgroundColor:[
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                      data:<?php echo json_encode($temp2); ?>,
+                                  },
+                                  {
+                                    label:'Humid 2 (RH%)',
+                                    backgroundColor:[
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:2,
+                                    data:<?php echo json_encode($humid2); ?>,
+                                  }
+                                ]  
+                                },
+                              options: {
+                                legend: {
+                                  display: true,
+                                  position: 'top',
+                                  pointSize: 7,
+                                  dataOpacity: 0.3,
+      
+                                  labels: {
+                                  fontColor: '#FFFFFF',
+                                  fontFamily: 'Circular Std Book',
+                                  fontSize: 14,
+                                  }
+                                },
+                              }
+                            });
+                    </script>  
+            <div style="width:70%;hieght:10%;text-align:center">
+              <div class="word_device"><br><br><h3><?php echo $productname3;?></h3></div>
+              <canvas  id="chart3"></canvas>
+            </div> 
+              <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+              <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+                  <script type="text/javascript">
+                      var ctx3 = document.getElementById("chart3").getContext('2d');
+                          var Chart3 = new Chart(ctx3, {
+                              type: 'line',
+                              data: {
+                                  labels:<?php echo json_encode($datetime3); ?>,
+                                  datasets: [{
+                                      label:'Light (lux)',
+                                      backgroundColor:[
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                      data:<?php echo json_encode($info3); ?>,
+                                  }]  
+                                },
+                              options: {
+                                legend: {
+                                  display: true,
+                                  position: 'top',
+                                  pointSize: 7,
+                                  dataOpacity: 0.3,
+      
+                                  labels: {
+                                  fontColor: '#FFFFFF',
+                                  fontFamily: 'Circular Std Book',
+                                  fontSize: 14,
+                                  }
+                                },
+                              }
+                            });
+                    </script>
+            <div style="width:70%;hieght:10%;text-align:center">
+              <div class="word_device"><br><br><h3><?php echo $productname4;?></h3></div>
+              <canvas  id="chart4"></canvas>
+            </div> 
+              <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+              <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+                  <script type="text/javascript">
+                      var ctx4 = document.getElementById("chart4").getContext('2d');
+                          var Chart4 = new Chart(ctx4, {
+                              type: 'line',
+                              data: {
+                                  labels:<?php echo json_encode($datetime4); ?>,
+                                  datasets: [{
+                                      label:'Speed (mm/s)',
+                                      backgroundColor:[
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                      data:<?php echo json_encode($speed); ?>,
+                                    },
+                                    {
+                                      label:'Acceleration (m/s^2)',
+                                      backgroundColor:[
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#00ff00"],borderWidth:2,
+                                      data:<?php echo json_encode($acceleration); ?>,
+                                    },
+                                    {
+                                      label:'Rotation Speed (r/min)',
+                                      backgroundColor:[
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#CC66FF"],borderWidth:2,
+                                      data:<?php echo json_encode($rotation); ?>,
+                                    },
+                                    {
+                                      label:'Temperature (Celcius)',
+                                      backgroundColor:[
+                                      'RGB(0, 0, 255,0.1)'],borderColor:["#FFFF66"],borderWidth:2,
+                                      data:<?php echo json_encode($temp); ?>,
+                                    }
+                                  ]  
+                                },
+                              options: {
+                                legend: {
+                                  display: true,
+                                  position: 'top',
+                                  pointSize: 7,
+                                  dataOpacity: 0.3,
+      
+                                  labels: {
+                                  fontColor: '#FFFFFF',
+                                  fontFamily: 'Circular Std Book',
+                                  fontSize: 14,
+                                  }
+                                },
+                              }
+                            });
+                    </script>
         </div>
       </div>
 </body>
