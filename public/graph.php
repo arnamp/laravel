@@ -144,7 +144,12 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 }]  
                               },
                             options: {
-                                  legend: {
+                              hover: {
+                                onHover: function(e) {
+                                  $("#chart1").css("cursor", e[0] ? "pointer" : "default");
+                                }
+                              }
+                                legend: {
                                 display: true,
                                 position: 'top',
     
