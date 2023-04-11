@@ -155,9 +155,10 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                               ]  
                               },
                             options: {
+                                pointShape: 'star',
                                 legend: {
                                 display: true,
-                                position: 'right',
+                                position: 'top',
     
                                 labels: {
                                 fontColor: '#FFFFFF',
@@ -195,9 +196,10 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                 ]  
                                 },
                               options: {
+                                  pointShape: 'star',
                                   legend: {
                                   display: true,
-                                  position: 'right',
+                                  position: 'top',
       
                                   labels: {
                                   fontColor: '#FFFFFF',
@@ -228,9 +230,10 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   }]  
                                 },
                               options: {
+                                  pointShape: 'star',
                                   legend: {
                                   display: true,
-                                  position: 'right',
+                                  position: 'top',
       
                                   labels: {
                                   fontColor: '#FFFFFF',
@@ -280,9 +283,10 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                                   ]  
                                 },
                               options: {
+                                  pointShape: 'star',                               
                                   legend: {
                                   display: true,
-                                  position: 'right',
+                                  position: 'top',
       
                                   labels: {
                                   fontColor: '#FFFFFF',
