@@ -15,12 +15,14 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
     while ($row = mysqli_fetch_array($result1)) { 
         $productname1=$row['DeviceType'];
         $datetime1[]  = date_format(date_create( $row['Uptime']),"d-m-Y H:i:s") ;
-        $info1[] = $row['Info'];
+        $temp1[] = $row['Temp'];
+        $humid1[] = $row['Humid'];
     }
     while ($row = mysqli_fetch_array($result2)) { 
         $productname2=$row['DeviceType'];
         $datetime2[]  = date_format(date_create( $row['Uptime']),"d-m-Y H:i:s") ;
-        $info2[] = $row['Info'];
+        $temp2[] = $row['Temp'];
+        $humid2[] = $row['Humid'];
     }
     while ($row = mysqli_fetch_array($result3)) { 
       $productname3=$row['DeviceType'];
@@ -137,11 +139,18 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                             data: {
                                 labels:<?php echo json_encode($datetime1); ?>,
                                 datasets: [{
-                                    label:'Temp & Humid 1',
+                                    label:'Temp 1',
                                     backgroundColor:[
                                     'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
-                                    data:<?php echo json_encode($info1); ?>, 
-                                }]  
+                                    data:<?php echo json_encode($temp1); ?>, 
+                                },
+                                {
+                                  label:'Humid 1',
+                                    backgroundColor:[
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                    data:<?php echo json_encode($humid1); ?>,
+                                }
+                              ]  
                               },
                             options: {
                                 legend: {
@@ -170,11 +179,18 @@ $con  = mysqli_connect("containers-us-west-29.railway.app:7830","root","LOPC3n2w
                               data: {
                                   labels:<?php echo json_encode($datetime2); ?>,
                                   datasets: [{
-                                      label:'Temp & Humid 2',
+                                      label:'Temp 2',
                                       backgroundColor:[
                                       'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
-                                      data:<?php echo json_encode($info2); ?>,
-                                  }]  
+                                      data:<?php echo json_encode($temp2); ?>,
+                                  },
+                                  {
+                                    label:'Humid 2',
+                                    backgroundColor:[
+                                    'RGB(0, 0, 255,0.1)'],borderColor:["RGB(255, 99, 71)"],borderWidth:2,
+                                    data:<?php echo json_encode($humid2); ?>,
+                                  }
+                                ]  
                                 },
                               options: {
                                 legend: {
