@@ -342,7 +342,7 @@ td{
 @media only screen and (min-width:360px) and (max-width:760px){
     .page{
         flex-direction: column;
-        width: 200vh;
+        width: 230vh;
         height: auto;
     }
     .content{
@@ -423,9 +423,6 @@ td{
     }
     .lightvibra{
         margin-left: 13%;
-    }
-    .tableinfo{
-        margin-left: 10%;
     }
     .img-info4{
         padding-top: 100px;
