@@ -13,7 +13,7 @@ inputBox.onkeyup = (e)=>{
     if(userData){
         icon.onclick = ()=>{
             webLink = `${userData}`;
-            linkTag.setAttribute("href", webLink + ".html");
+            linkTag.setAttribute("href", webLink + ".php");
             linkTag.click();
         }
         emptyArray = suggestions.filter((data)=>{
@@ -41,7 +41,7 @@ function select(element){
     inputBox.value = selectData;
     icon.onclick = ()=>{
         webLink = `${selectData}`;
-        linkTag.setAttribute("href", webLink + ".html");
+        linkTag.setAttribute("href", webLink + ".php");
         linkTag.click();
     }
     searchWrapper.classList.remove("active");
